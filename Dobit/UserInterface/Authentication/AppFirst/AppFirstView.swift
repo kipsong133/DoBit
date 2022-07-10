@@ -7,11 +7,17 @@ import UIKit
 class AppFirstView: UIViewController, BaseViewControllerProtocol, Storyboardable {
     static var storyboardName: String = "Authentication"
     
+    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAttribute()
         setupLayout()
+        
+        registerButton.addTarget(self, action: #selector(registerButtonDidTap), for: .touchUpInside)
+        loginButton.addTarget(self, action: #selector(loginButtonDidTap), for: .touchUpInside)
     }
     
     

@@ -1,14 +1,14 @@
 //
-//  RegisterView.swift
+//  LoginView.swift
 //  Dobit
 //
-//  Created by 김우성 on 2022/07/09.
+//  Created by 박현우 on 2022/07/10.
 //
 
 import UIKit
 
-class RegisterView: UIViewController, BaseViewControllerProtocol, Storyboardable {
-    static var storyboardName: String = "RegisterView"
+class LoginView: UIViewController, BaseViewControllerProtocol, Storyboardable {
+    static var storyboardName: String = "LoginView"
     
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
@@ -25,12 +25,12 @@ class RegisterView: UIViewController, BaseViewControllerProtocol, Storyboardable
     // MARK: - Actions
     @objc
     private func previousButtonDidTap() {
-        // TODO: 첫 화면으로 이동한다.
+        // TODO: 이전 화면으로 이동한다.
     }
     
     @objc
     private func startButtonDidTap() {
-        // TODO: 로그인 화면으로 이동한다.
+        // TODO: 메인 화면으로 이동한다.
     }
     
     // MARK: - Helpers

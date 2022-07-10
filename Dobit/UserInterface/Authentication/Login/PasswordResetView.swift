@@ -1,17 +1,17 @@
 //
-//  RegisterView.swift
+//  PasswordResetView.swift
 //  Dobit
 //
-//  Created by 김우성 on 2022/07/09.
+//  Created by 박현우 on 2022/07/10.
 //
 
 import UIKit
 
-class RegisterView: UIViewController, BaseViewControllerProtocol, Storyboardable {
-    static var storyboardName: String = "RegisterView"
+class PasswordResetView: UIViewController, BaseViewControllerProtocol, Storyboardable {
+    static var storyboardName: String = "PasswordResetView"
     
     @IBOutlet weak var previousButton: UIButton!
-    @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,17 +19,17 @@ class RegisterView: UIViewController, BaseViewControllerProtocol, Storyboardable
         setupLayout()
         
         previousButton.addTarget(self, action: #selector(previousButtonDidTap), for: .touchUpInside)
-        startButton.addTarget(self, action: #selector(startButtonDidTap), for: .touchUpInside)
+        nextButton.addTarget(self, action: #selector(nextButtonDidTap), for: .touchUpInside)
     }
     
     // MARK: - Actions
     @objc
     private func previousButtonDidTap() {
-        // TODO: 첫 화면으로 이동한다.
+        // TODO: 이전 화면으로 이동한다.
     }
     
     @objc
-    private func startButtonDidTap() {
+    private func nextButtonDidTap() {
         // TODO: 로그인 화면으로 이동한다.
     }
     

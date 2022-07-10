@@ -27,6 +27,8 @@
 		25B5B59428795E2A00CC98AA /* UserDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5B59328795E2A00CC98AA /* UserDefaultKey.swift */; };
 		25B5B59728795E4300CC98AA /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5B59628795E4300CC98AA /* MemoryStorage.swift */; };
 		25B5B59A28795F0B00CC98AA /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5B59928795F0B00CC98AA /* Storyboardable.swift */; };
+		B7A8A794287B0E6600EBB368 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8A793287B0E6600EBB368 /* LoginView.swift */; };
+		B7A8A796287B0E7200EBB368 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8A795287B0E7200EBB368 /* PasswordResetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		25B5B59328795E2A00CC98AA /* UserDefaultKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKey.swift; sourceTree = "<group>"; };
 		25B5B59628795E4300CC98AA /* MemoryStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
 		25B5B59928795F0B00CC98AA /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		B7A8A793287B0E6600EBB368 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B7A8A795287B0E7200EBB368 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				25B5B586287951E900CC98AA /* AppFirst */,
+				B7A8A792287B0E5400EBB368 /* Login */,
 				25B5B5892879531500CC98AA /* Register */,
 				25B5B584287951D100CC98AA /* Authentication.storyboard */,
 			);
@@ -227,6 +232,15 @@
 				25B5B59928795F0B00CC98AA /* Storyboardable.swift */,
 			);
 			path = Storyboardable;
+			sourceTree = "<group>";
+		};
+		B7A8A792287B0E5400EBB368 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B7A8A793287B0E6600EBB368 /* LoginView.swift */,
+				B7A8A795287B0E7200EBB368 /* PasswordResetView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,10 +325,12 @@
 				25B5B55F28794AF000CC98AA /* ViewController.swift in Sources */,
 				25B5B59428795E2A00CC98AA /* UserDefaultKey.swift in Sources */,
 				25B5B59728795E4300CC98AA /* MemoryStorage.swift in Sources */,
+				B7A8A794287B0E6600EBB368 /* LoginView.swift in Sources */,
 				25B5B55B28794AF000CC98AA /* AppDelegate.swift in Sources */,
 				25B5B5832879515800CC98AA /* AppFirstView.swift in Sources */,
 				25B5B59A28795F0B00CC98AA /* Storyboardable.swift in Sources */,
 				25B5B57E28794FFC00CC98AA /* UIColor+Extensions.swift in Sources */,
+				B7A8A796287B0E7200EBB368 /* PasswordResetView.swift in Sources */,
 				25B5B58E287954A400CC98AA /* BaseViewControllerProtocol.swift in Sources */,
 				25B5B55D28794AF000CC98AA /* SceneDelegate.swift in Sources */,
 			);
