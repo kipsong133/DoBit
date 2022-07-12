@@ -10,6 +10,11 @@ import UIKit
 class RegisterView: UIViewController, BaseViewControllerProtocol, Storyboardable {
     static var storyboardName: String = "RegisterView"
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordCheckTextField: UITextField!
+    @IBOutlet weak var nicknameTextField: UITextField!
+    
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
     
@@ -39,6 +44,8 @@ class RegisterView: UIViewController, BaseViewControllerProtocol, Storyboardable
     }
     
     private func setupLayout() {
-        
+        [emailTextField, passwordTextField, passwordCheckTextField, nicknameTextField].forEach {
+            $0?.addBottomBorder()
+        }
     }
 }

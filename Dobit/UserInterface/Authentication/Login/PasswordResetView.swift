@@ -10,6 +10,9 @@ import UIKit
 class PasswordResetView: UIViewController, BaseViewControllerProtocol, Storyboardable {
     static var storyboardName: String = "PasswordResetView"
     
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordCheckTextField: UITextField!
+    
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
@@ -39,6 +42,8 @@ class PasswordResetView: UIViewController, BaseViewControllerProtocol, Storyboar
     }
     
     private func setupLayout() {
-        
+        [passwordTextField, passwordCheckTextField].forEach {
+            $0?.addBottomBorder()
+        }
     }
 }

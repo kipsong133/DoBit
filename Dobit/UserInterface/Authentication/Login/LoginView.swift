@@ -10,6 +10,9 @@ import UIKit
 class LoginView: UIViewController, BaseViewControllerProtocol, Storyboardable {
     static var storyboardName: String = "LoginView"
     
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
     
@@ -39,6 +42,8 @@ class LoginView: UIViewController, BaseViewControllerProtocol, Storyboardable {
     }
     
     private func setupLayout() {
-        
+        [emailTextField, passwordTextField].forEach {
+            $0?.addBottomBorder()
+        }
     }
 }
