@@ -30,12 +30,15 @@ class RegisterView: UIViewController, BaseViewControllerProtocol, Storyboardable
     // MARK: - Actions
     @objc
     private func previousButtonDidTap() {
-        // TODO: 첫 화면으로 이동한다.
+        // MARK: 첫 화면으로 이동한다.
+        navigationController?.popViewController(animated: true)
     }
     
     @objc
     private func startButtonDidTap() {
-        // TODO: 로그인 화면으로 이동한다.
+        // MARK: 로그인 화면으로 이동한다.
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! LoginView
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     // MARK: - Helpers

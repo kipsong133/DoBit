@@ -1,5 +1,5 @@
 //
-//  PasswordResetView.swift
+//  PasswordResetAuthView.swift
 //  Dobit
 //
 //  Created by 박현우 on 2022/07/10.
@@ -7,8 +7,8 @@
 
 import UIKit
 
-class PasswordResetView: UIViewController, BaseViewControllerProtocol, Storyboardable {
-    static var storyboardName: String = "PasswordResetView"
+class PasswordResetAuthView: UIViewController, BaseViewControllerProtocol, Storyboardable {
+    static var storyboardName: String = "PasswordResetView_Auth"
     
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var passwordCheckTextField: UITextField!
@@ -34,8 +34,8 @@ class PasswordResetView: UIViewController, BaseViewControllerProtocol, Storyboar
     
     @objc
     private func nextButtonDidTap() {
-        // MARK: 로그인 화면으로 이동한다.
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! LoginView
+        // MARK: 비밀번호 재설정 화면으로 이동한다.
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PasswordResetView") as! PasswordResetView
         navigationController?.pushViewController(vc, animated: true)
     }
     

@@ -29,6 +29,7 @@
 		25B5B59A28795F0B00CC98AA /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B5B59928795F0B00CC98AA /* Storyboardable.swift */; };
 		B7A8A794287B0E6600EBB368 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8A793287B0E6600EBB368 /* LoginView.swift */; };
 		B7A8A796287B0E7200EBB368 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8A795287B0E7200EBB368 /* PasswordResetView.swift */; };
+		B7D31B04287DCC2000869029 /* PasswordResetAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D31B03287DCC2000869029 /* PasswordResetAuthView.swift */; };
 		B7FF7EDC287C7D19008BD855 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FF7EDB287C7D19008BD855 /* UITextField+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		25B5B59928795F0B00CC98AA /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
 		B7A8A793287B0E6600EBB368 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B7A8A795287B0E7200EBB368 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
+		B7D31B03287DCC2000869029 /* PasswordResetAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetAuthView.swift; sourceTree = "<group>"; };
 		B7FF7EDB287C7D19008BD855 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +244,7 @@
 			children = (
 				B7A8A793287B0E6600EBB368 /* LoginView.swift */,
 				B7A8A795287B0E7200EBB368 /* PasswordResetView.swift */,
+				B7D31B03287DCC2000869029 /* PasswordResetAuthView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				25B5B59A28795F0B00CC98AA /* Storyboardable.swift in Sources */,
 				25B5B57E28794FFC00CC98AA /* UIColor+Extensions.swift in Sources */,
 				B7A8A796287B0E7200EBB368 /* PasswordResetView.swift in Sources */,
+				B7D31B04287DCC2000869029 /* PasswordResetAuthView.swift in Sources */,
 				25B5B58E287954A400CC98AA /* BaseViewControllerProtocol.swift in Sources */,
 				25B5B55D28794AF000CC98AA /* SceneDelegate.swift in Sources */,
 			);
