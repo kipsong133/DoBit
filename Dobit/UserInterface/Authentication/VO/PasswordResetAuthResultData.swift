@@ -10,10 +10,10 @@ struct PasswordResetAuthResultData: Codable {
     let isSuccess: Bool
     let code: Int
     let message: String
-    let result: Result
+    let result: PasswordResetAuthResult
 }
 
 // MARK: - Result
-struct Result: Codable {
+struct PasswordResetAuthResult: Codable {
     let authNumber: String
 }

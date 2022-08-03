@@ -10,11 +10,11 @@ struct RegisterResultData: Codable {
     let isSuccess: Bool
     let code: Int
     let message: String
-    let result: Result
+    let result: RegisterResult
 }
 
-// MARK: - Result
-struct Result: Codable {
+// MARK: - RegisterResult
+struct RegisterResult: Codable {
     let userIdx: Int
     let jwt: String
 }
