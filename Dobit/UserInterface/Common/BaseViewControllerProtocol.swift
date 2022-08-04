@@ -11,7 +11,11 @@ protocol BaseViewControllerProtocol: UIViewController {
 
 extension BaseViewControllerProtocol {
     var dobitBackgroundColor: UIColor {
-        return UIColor.white
+        return UIColor(named: "DoBit Grey") ?? UIColor.white
+    }
+    
+    var dobitTintColor: UIColor {
+        return UIColor(named: "DoBit Black") ?? UIColor.black
     }
     
     var sidePadding: CGFloat { return 22 }

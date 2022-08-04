@@ -51,6 +51,7 @@ class LoginView: UIViewController, BaseViewControllerProtocol, Storyboardable {
     private func setupLayout() {
         [emailTextField, passwordTextField].forEach {
             $0?.addBottomBorder()
+            $0?.textColor = dobitTintColor
         }
     }
 }

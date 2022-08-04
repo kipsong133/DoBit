@@ -47,6 +47,7 @@ class PasswordResetAuthView: UIViewController, BaseViewControllerProtocol, Story
     private func setupLayout() {
         [passwordTextField, passwordCheckTextField].forEach {
             $0?.addBottomBorder()
+            $0?.textColor = dobitTintColor
         }
     }
 }

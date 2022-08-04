@@ -54,6 +54,7 @@ class RegisterView: UIViewController, BaseViewControllerProtocol, Storyboardable
     private func setupLayout() {
         [emailTextField, passwordTextField, passwordCheckTextField, nicknameTextField].forEach {
             $0?.addBottomBorder()
+            $0?.textColor = dobitTintColor
         }
     }
 }
