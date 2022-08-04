@@ -41,12 +41,9 @@ class RegisterView: UIViewController, BaseViewControllerProtocol, Storyboardable
         let pwCheck = passwordCheckTextField.text ?? ""
         let nickname = nicknameTextField.text ?? ""
         
-        AuthenticationService.register(email: email, pw: pw, pwConfirm: pwCheck, nickname: nickname) { [weak self] data in
-            
-        }
         // MARK: 로그인 화면으로 이동한다.
-//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! LoginView
-//        navigationController?.pushViewController(vc, animated: true)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! LoginView
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     // MARK: - Helpers
