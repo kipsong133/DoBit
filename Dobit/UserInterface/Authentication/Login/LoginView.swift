@@ -41,6 +41,10 @@ class LoginView: UIViewController, BaseViewControllerProtocol, Storyboardable {
     @objc
     private func startButtonDidTap() {
         // MARK: 메인 화면으로 이동한다.
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let vc =  storyboard.instantiateViewController(withIdentifier: TabBarView.identifier) as! TabBarView
+        let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
+        sceneDelegate.window?.rootViewController = vc
     }
     
     // MARK: - Helpers
