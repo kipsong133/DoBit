@@ -10,7 +10,7 @@ struct LoginResultData: Codable {
     let isSuccess: Bool
     let code: Int
     let message: String
-    let result: LoginResult
+    let result: LoginResult?
 }
 
 // MARK: - LoginResult

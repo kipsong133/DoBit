@@ -20,7 +20,7 @@ class AuthenticationService {
             "nickname": nickname
         ]
         
-        AF.request(url, method: .post, parameters: params)
+        AF.request(url, method: .post, parameters: params, encoding: JSONEncoding.default)
             .responseDecodable(of: RegisterResultData.self) { response in
                 switch response.result {
                 case .success:
@@ -41,7 +41,7 @@ class AuthenticationService {
             "password": pw
         ]
         
-        AF.request(url, method: .post, parameters: params)
+        AF.request(url, method: .post, parameters: params, encoding: JSONEncoding.default)
             .responseDecodable(of: LoginResultData.self) { response in
                 switch response.result {
                 case .success:
@@ -61,7 +61,7 @@ class AuthenticationService {
             "email": email
         ]
         
-        AF.request(url, method: .post, parameters: params)
+        AF.request(url, method: .post, parameters: params, encoding: JSONEncoding.default)
             .responseDecodable(of: PasswordResetAuthResultData.self) { response in
                 switch response.result {
                 case .success:
@@ -83,7 +83,7 @@ class AuthenticationService {
             "confirmPassword": pwConfirm
         ]
         
-        AF.request(url, method: .post, parameters: params)
+        AF.request(url, method: .post, parameters: params, encoding: JSONEncoding.default)
             .responseDecodable(of: PasswordResetResultData.self) { response in
                 switch response.result {
                 case .success:
