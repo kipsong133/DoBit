@@ -49,7 +49,7 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2Z-wp-V60">
                                 <rect key="frame" x="0.0" y="767.5" width="414" height="1"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="DoBit Black"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="j0Q-Hn-bCp"/>
                                 </constraints>
@@ -64,7 +64,7 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x2o-L7-eJT">
                                 <rect key="frame" x="0.0" y="672.5" width="414" height="1"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="DoBit Black"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="GTy-C5-3HC"/>
                                 </constraints>
@@ -162,14 +162,14 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="abT-4u-r5C">
                                 <rect key="frame" x="0.0" y="767" width="414" height="1"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="DoBit Black"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="Kih-OM-gMN"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfl-Fo-K6k">
                                 <rect key="frame" x="206.5" y="768" width="1" height="128"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="DoBit Black"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="ylB-VT-Ibx"/>
                                 </constraints>
@@ -283,14 +283,14 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="auZ-16-PF1">
                                 <rect key="frame" x="0.0" y="767" width="414" height="1"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="DoBit Black"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="d2Q-ur-zRS"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cto-NT-sg8">
                                 <rect key="frame" x="206.5" y="768" width="1" height="128"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="DoBit Black"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="e3J-9y-XyE"/>
                                 </constraints>
@@ -409,14 +409,14 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0c-8H-P9v">
                                 <rect key="frame" x="0.0" y="767" width="414" height="1"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="DoBit Black"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="5Yx-j5-On8"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ex6-ZM-4RD">
                                 <rect key="frame" x="206.5" y="768" width="1" height="128"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="DoBit Black"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="o9D-zp-vPk"/>
                                 </constraints>
@@ -513,14 +513,14 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIi-jq-2v0">
                                 <rect key="frame" x="0.0" y="767" width="414" height="1"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="DoBit Black"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="G6Z-Oj-E3f"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKJ-Im-ZJA">
                                 <rect key="frame" x="206.5" y="768" width="1" height="128"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="DoBit Black"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="qYu-45-sa3"/>
                                 </constraints>
