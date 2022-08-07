@@ -40,6 +40,8 @@
 		B7A8A794287B0E6600EBB368 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8A793287B0E6600EBB368 /* LoginView.swift */; };
 		B7A8A796287B0E7200EBB368 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A8A795287B0E7200EBB368 /* PasswordResetView.swift */; };
 		B7D31B04287DCC2000869029 /* PasswordResetAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D31B03287DCC2000869029 /* PasswordResetAuthView.swift */; };
+		B7F0EA6B289FF2320047A293 /* IdentityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F0EA69289FF2320047A293 /* IdentityTableViewCell.swift */; };
+		B7F0EA6C289FF2320047A293 /* IdentityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7F0EA6A289FF2320047A293 /* IdentityTableViewCell.xib */; };
 		B7FF7EDC287C7D19008BD855 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FF7EDB287C7D19008BD855 /* UITextField+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		B7A8A793287B0E6600EBB368 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		B7A8A795287B0E7200EBB368 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 		B7D31B03287DCC2000869029 /* PasswordResetAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetAuthView.swift; sourceTree = "<group>"; };
+		B7F0EA69289FF2320047A293 /* IdentityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityTableViewCell.swift; sourceTree = "<group>"; };
+		B7F0EA6A289FF2320047A293 /* IdentityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IdentityTableViewCell.xib; sourceTree = "<group>"; };
 		B7FF7EDB287C7D19008BD855 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -276,6 +280,7 @@
 		B7110F62289D08B300618EB2 /* Identity */ = {
 			isa = PBXGroup;
 			children = (
+				B7F0EA68289FF20B0047A293 /* Cells */,
 				B7110F63289D0A0B00618EB2 /* IdentityView.swift */,
 			);
 			path = Identity;
@@ -308,6 +313,15 @@
 				B7D31B03287DCC2000869029 /* PasswordResetAuthView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		B7F0EA68289FF20B0047A293 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B7F0EA69289FF2320047A293 /* IdentityTableViewCell.swift */,
+				B7F0EA6A289FF2320047A293 /* IdentityTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,6 +391,7 @@
 				B7110F60289BC79B00618EB2 /* appstore.png in Resources */,
 				25B5B585287951D100CC98AA /* Authentication.storyboard in Resources */,
 				25B5B56728794AF100CC98AA /* LaunchScreen.storyboard in Resources */,
+				B7F0EA6C289FF2320047A293 /* IdentityTableViewCell.xib in Resources */,
 				25B5B56428794AF100CC98AA /* Assets.xcassets in Resources */,
 				25B5B56228794AF000CC98AA /* Main.storyboard in Resources */,
 			);
@@ -400,6 +415,7 @@
 				B7A48C91288168EF008F25ED /* AuthenticationService.swift in Sources */,
 				25B5B57C28794FC300CC98AA /* DeviceSizeHelper.swift in Sources */,
 				25B5B59228795AFF00CC98AA /* UserDefaultStorage.swift in Sources */,
+				B7F0EA6B289FF2320047A293 /* IdentityTableViewCell.swift in Sources */,
 				25B5B55F28794AF000CC98AA /* ViewController.swift in Sources */,
 				25B5B59428795E2A00CC98AA /* UserDefaultKey.swift in Sources */,
 				25B5B59728795E4300CC98AA /* MemoryStorage.swift in Sources */,

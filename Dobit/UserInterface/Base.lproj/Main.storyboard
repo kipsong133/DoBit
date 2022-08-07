@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o1F-dg-JI4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o1F-dg-JI4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,14 +34,81 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUd-Mt-kb5">
+                                <rect key="frame" x="0.0" y="44" width="414" height="103.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉스" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXX-OQ-PsE">
+                                        <rect key="frame" x="20" y="37.5" width="42" height="29"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3q6-Ys-R7h">
+                                        <rect key="frame" x="0.0" y="101.5" width="414" height="1"/>
+                                        <color key="backgroundColor" name="DoBit Black"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="i6Y-b1-wh0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" name="DoBit Grey"/>
+                                <constraints>
+                                    <constraint firstItem="iXX-OQ-PsE" firstAttribute="centerY" secondItem="dUd-Mt-kb5" secondAttribute="centerY" id="2d3-iC-BDs"/>
+                                    <constraint firstAttribute="trailing" secondItem="3q6-Ys-R7h" secondAttribute="trailing" id="IIg-ge-HTe"/>
+                                    <constraint firstAttribute="bottom" secondItem="3q6-Ys-R7h" secondAttribute="bottom" constant="1" id="YEB-PK-6io"/>
+                                    <constraint firstAttribute="width" secondItem="dUd-Mt-kb5" secondAttribute="height" multiplier="2:0.5" id="aZn-Cd-Agj"/>
+                                    <constraint firstItem="3q6-Ys-R7h" firstAttribute="leading" secondItem="dUd-Mt-kb5" secondAttribute="leading" id="bfB-zG-2eD"/>
+                                    <constraint firstItem="iXX-OQ-PsE" firstAttribute="leading" secondItem="dUd-Mt-kb5" secondAttribute="leading" constant="20" id="mb3-CC-IEd"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vuh-ZC-7Ph">
+                                <rect key="frame" x="0.0" y="147.5" width="414" height="665.5"/>
+                                <color key="backgroundColor" name="DoBit Grey"/>
+                                <color key="separatorColor" name="DoBit Black"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZyF-AT-1H8">
+                                <rect key="frame" x="333" y="714" width="57" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nS9-AD-abD">
+                                        <rect key="frame" x="23.5" y="23" width="10" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="DoBit Grey"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="KMW-jZ-Adx"/>
+                                    <constraint firstAttribute="height" constant="65" id="b8B-Um-oWh"/>
+                                    <constraint firstItem="nS9-AD-abD" firstAttribute="centerX" secondItem="ZyF-AT-1H8" secondAttribute="centerX" id="pcH-pb-dRB"/>
+                                    <constraint firstItem="nS9-AD-abD" firstAttribute="centerY" secondItem="ZyF-AT-1H8" secondAttribute="centerY" id="xD8-hw-qF5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="DoBit Grey"/>
+                        <constraints>
+                            <constraint firstItem="vuh-ZC-7Ph" firstAttribute="top" secondItem="dUd-Mt-kb5" secondAttribute="bottom" id="1SP-Gm-vVR"/>
+                            <constraint firstItem="ZyF-AT-1H8" firstAttribute="bottom" secondItem="vuh-ZC-7Ph" secondAttribute="bottom" constant="-34" id="JY8-bm-0X5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vuh-ZC-7Ph" secondAttribute="bottom" id="Pxx-sY-IKG"/>
+                            <constraint firstItem="dUd-Mt-kb5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="V4y-ZE-uTy"/>
+                            <constraint firstItem="dUd-Mt-kb5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xpl-8W-hVU"/>
+                            <constraint firstItem="vuh-ZC-7Ph" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bX2-aG-lmn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vuh-ZC-7Ph" secondAttribute="trailing" id="eqU-0a-SvA"/>
+                            <constraint firstItem="ZyF-AT-1H8" firstAttribute="trailing" secondItem="vuh-ZC-7Ph" secondAttribute="trailing" constant="-24" id="eun-kz-fGH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dUd-Mt-kb5" secondAttribute="trailing" id="yaa-LE-jbF"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="identity-false" selectedImage="identity-true" id="rwV-Tz-U5L"/>
+                    <connections>
+                        <outlet property="addButton" destination="ZyF-AT-1H8" id="8bQ-lU-5VT"/>
+                        <outlet property="tableView" destination="vuh-ZC-7Ph" id="Bvd-cO-s3P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61" y="92"/>
+            <point key="canvasLocation" x="60.869565217391312" y="91.741071428571431"/>
         </scene>
         <!--Habit View-->
         <scene sceneID="e9e-g1-VKf">
@@ -65,6 +132,9 @@
         <image name="habit-true" width="42" height="42"/>
         <image name="identity-false" width="42" height="42"/>
         <image name="identity-true" width="42" height="42"/>
+        <namedColor name="DoBit Black">
+            <color red="0.13725490196078433" green="0.14117647058823529" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="DoBit Grey">
             <color red="0.93725490196078431" green="0.93725490196078431" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
