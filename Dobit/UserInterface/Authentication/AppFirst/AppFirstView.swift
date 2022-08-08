@@ -25,14 +25,14 @@ class AppFirstView: UIViewController, BaseViewControllerProtocol, Storyboardable
     @objc
     private func registerButtonDidTap() {
         // MARK: 회원가입 화면으로 이동한다.
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "RegisterView") as! RegisterView
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: RegisterView.storyboardName) as! RegisterView
         navigationController?.pushViewController(vc, animated: true)
     }
     
     @objc
     private func loginButtonDidTap() {
         // MARK: 로그인 화면으로 이동한다.
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! LoginView
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: LoginView.storyboardName) as! LoginView
         navigationController?.pushViewController(vc, animated: true)
     }
     

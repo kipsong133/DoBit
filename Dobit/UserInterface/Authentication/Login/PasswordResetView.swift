@@ -35,7 +35,7 @@ class PasswordResetView: UIViewController, BaseViewControllerProtocol, Storyboar
     @objc
     private func nextButtonDidTap() {
         // MARK: 로그인 화면으로 이동한다.
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "LoginView") as! LoginView
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: LoginView.storyboardName) as! LoginView
         navigationController?.pushViewController(vc, animated: true)
     }
     

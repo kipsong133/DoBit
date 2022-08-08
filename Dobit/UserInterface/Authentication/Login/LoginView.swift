@@ -28,7 +28,7 @@ class LoginView: UIViewController, BaseViewControllerProtocol, Storyboardable {
     // MARK: - Actions
     @IBAction func passwordResetButtonDidTap(_ sender: Any) {
         // MARK: 비밀번호 재설정을 위한 인증 화면으로 이동한다.
-        let vc = storyboard?.instantiateViewController(withIdentifier: "PasswordResetView_Auth") as! PasswordResetView
+        let vc = storyboard?.instantiateViewController(withIdentifier: PasswordResetAuthView.storyboardName) as! PasswordResetView
         navigationController?.pushViewController(vc, animated: true)
     }
     

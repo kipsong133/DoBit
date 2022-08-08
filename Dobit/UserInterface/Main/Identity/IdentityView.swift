@@ -17,7 +17,14 @@ class IdentityView: UIViewController, BaseViewControllerProtocol, Storyboardable
         super.viewDidLoad()
         setupAttribute()
         setupLayout()
+        setupView()
         setupTableView()
+    }
+    
+    // MARK: - Actions
+    @objc private func addButtonHandleTap(_ sender: UITapGestureRecognizer) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: IdentityFormView.storyboardName) as! IdentityFormView
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     // MARK: - Helpers
@@ -29,6 +36,11 @@ class IdentityView: UIViewController, BaseViewControllerProtocol, Storyboardable
         addButton.layer.borderColor = UIColor(named: "DoBit Black")!.cgColor
         addButton.layer.borderWidth = 1.0
         addButton.layer.cornerRadius = 28.5
+    }
+    
+    private func setupView() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(addButtonHandleTap(_:)))
+        addButton.addGestureRecognizer(tap)
     }
     
     private func setupTableView() {
