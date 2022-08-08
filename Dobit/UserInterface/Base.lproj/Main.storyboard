@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o1F-dg-JI4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o1F-dg-JI4">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +20,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="O7E-MR-rYp"/>
+                        <segue destination="MtV-GJ-d1Y" kind="relationship" relationship="viewControllers" id="wad-Ab-hTz"/>
                         <segue destination="DWc-a0-516" kind="relationship" relationship="viewControllers" id="dE4-3n-Am7"/>
                     </connections>
                 </tabBarController>
@@ -45,7 +46,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3q6-Ys-R7h">
-                                        <rect key="frame" x="0.0" y="101.5" width="414" height="1"/>
+                                        <rect key="frame" x="0.0" y="102.5" width="414" height="1"/>
                                         <color key="backgroundColor" name="DoBit Black"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="i6Y-b1-wh0"/>
@@ -56,7 +57,7 @@
                                 <constraints>
                                     <constraint firstItem="iXX-OQ-PsE" firstAttribute="centerY" secondItem="dUd-Mt-kb5" secondAttribute="centerY" id="2d3-iC-BDs"/>
                                     <constraint firstAttribute="trailing" secondItem="3q6-Ys-R7h" secondAttribute="trailing" id="IIg-ge-HTe"/>
-                                    <constraint firstAttribute="bottom" secondItem="3q6-Ys-R7h" secondAttribute="bottom" constant="1" id="YEB-PK-6io"/>
+                                    <constraint firstAttribute="bottom" secondItem="3q6-Ys-R7h" secondAttribute="bottom" id="YEB-PK-6io"/>
                                     <constraint firstAttribute="width" secondItem="dUd-Mt-kb5" secondAttribute="height" multiplier="2:0.5" id="aZn-Cd-Agj"/>
                                     <constraint firstItem="3q6-Ys-R7h" firstAttribute="leading" secondItem="dUd-Mt-kb5" secondAttribute="leading" id="bfB-zG-2eD"/>
                                     <constraint firstItem="iXX-OQ-PsE" firstAttribute="leading" secondItem="dUd-Mt-kb5" secondAttribute="leading" constant="20" id="mb3-CC-IEd"/>
@@ -101,6 +102,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="identity-false" selectedImage="identity-true" id="rwV-Tz-U5L"/>
+                    <navigationItem key="navigationItem" id="e5I-kh-Krt"/>
                     <connections>
                         <outlet property="addButton" destination="ZyF-AT-1H8" id="8bQ-lU-5VT"/>
                         <outlet property="tableView" destination="vuh-ZC-7Ph" id="Bvd-cO-s3P"/>
@@ -108,7 +110,38 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60.869565217391312" y="91.741071428571431"/>
+            <point key="canvasLocation" x="61" y="830"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EtH-P5-k34">
+            <objects>
+                <viewController id="jvA-Ab-Mj9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HRy-Zc-t7t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="pe0-u9-Ahx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mHh-A9-6kA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="1535"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="csC-3q-Ai2">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AuV-3V-gjZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController navigationBarHidden="YES" id="MtV-GJ-d1Y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="identity-false" selectedImage="identity-true" id="aAe-ip-Nh1"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5dG-yU-X2w">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Jo8-KT-AkG"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="61" y="90"/>
         </scene>
         <!--Habit View-->
         <scene sceneID="e9e-g1-VKf">
@@ -138,5 +171,8 @@
         <namedColor name="DoBit Grey">
             <color red="0.93725490196078431" green="0.93725490196078431" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
