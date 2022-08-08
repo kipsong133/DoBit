@@ -369,7 +369,7 @@
                                 <rect key="frame" x="314.5" y="378" width="79.5" height="33.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="삭제하기">
-                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="16"/>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                                     <color key="baseForegroundColor" name="DoBit Black"/>
                                 </buttonConfiguration>
                             </button>
