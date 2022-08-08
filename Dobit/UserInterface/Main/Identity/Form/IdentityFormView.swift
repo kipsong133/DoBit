@@ -41,4 +41,6 @@ class IdentityFormView: UIViewController, BaseViewControllerProtocol, Storyboard
             $0.setTitle("", for: .normal)
         }
     }
+    
+    // TODO: 색상 선택 시 강조하기
 }

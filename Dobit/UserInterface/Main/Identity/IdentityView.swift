@@ -46,6 +46,7 @@ class IdentityView: UIViewController, BaseViewControllerProtocol, Storyboardable
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+        // TODO: tableView의 separatorColor 색상이 다르게 나오는 문제 해결 필요
         
         tableView.register(UINib(nibName: IdentityTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: IdentityTableViewCell.identifier)
     }
