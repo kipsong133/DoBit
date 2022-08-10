@@ -27,9 +27,6 @@ class IdentityTableViewCell: UITableViewCell {
     func setupView() {
         backgroundColor = UIColor(named: "DoBit Grey") ?? .white
         selectionStyle = .none
-        preservesSuperviewLayoutMargins = false
-        separatorInset = .zero
-        layoutMargins = .zero
         
         colorView.cornerRadius = 11
     }

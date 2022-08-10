@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -37,9 +37,17 @@
                         <color key="textColor" red="0.65490196078431373" green="0.65490196078431373" blue="0.65490196078431373" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I97-rd-AMF">
+                        <rect key="frame" x="0.0" y="80" width="320" height="1"/>
+                        <color key="backgroundColor" name="DoBit Black"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="J7B-WM-zdI"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="wuT-VO-ZmI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="17x-vw-F6p"/>
+                    <constraint firstAttribute="bottom" secondItem="I97-rd-AMF" secondAttribute="bottom" id="80X-Cq-xiC"/>
                     <constraint firstAttribute="bottom" secondItem="sOx-uM-0cY" secondAttribute="bottom" constant="25" id="Bu2-8L-ry4"/>
                     <constraint firstAttribute="bottom" secondItem="wuT-VO-ZmI" secondAttribute="bottom" constant="12" id="UUA-M2-BDR"/>
                     <constraint firstItem="sOx-uM-0cY" firstAttribute="top" secondItem="ftz-IX-jus" secondAttribute="bottom" constant="12" id="XCY-IU-iiE"/>
@@ -47,6 +55,8 @@
                     <constraint firstItem="ftz-IX-jus" firstAttribute="leading" secondItem="wuT-VO-ZmI" secondAttribute="trailing" constant="15" id="i9q-n3-cbZ"/>
                     <constraint firstItem="wuT-VO-ZmI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="kcw-L6-61M"/>
                     <constraint firstItem="sOx-uM-0cY" firstAttribute="leading" secondItem="wuT-VO-ZmI" secondAttribute="trailing" constant="15" id="pYt-SK-oq0"/>
+                    <constraint firstItem="I97-rd-AMF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tvx-Gg-LJG"/>
+                    <constraint firstAttribute="trailing" secondItem="I97-rd-AMF" secondAttribute="trailing" id="ydu-Ac-Nnb"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -58,7 +68,7 @@
     </objects>
     <resources>
         <namedColor name="DoBit Black">
-            <color red="0.13725490196078433" green="0.14117647058823529" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.13699999451637268" green="0.14100000262260437" blue="0.14900000393390656" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
