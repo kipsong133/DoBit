@@ -316,35 +316,35 @@
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="sXE-Vu-e5L">
                                                 <rect key="frame" x="0.0" y="0.0" width="16" height="33"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="7fo-sJ-7wl">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="7fo-sJ-7wl">
                                                 <rect key="frame" x="36.5" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Pink"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="tsF-cT-2bH">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="tsF-cT-2bH">
                                                 <rect key="frame" x="73" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Red"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="k1S-md-HAf">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="k1S-md-HAf">
                                                 <rect key="frame" x="109" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Yellow"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="LIg-2b-4iK">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="LIg-2b-4iK">
                                                 <rect key="frame" x="145.5" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Green"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="D5S-7H-NAq">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="D5S-7H-NAq">
                                                 <rect key="frame" x="182" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Skyblue"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="eeY-gn-64N">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="eeY-gn-64N">
                                                 <rect key="frame" x="218.5" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Blue"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="JV3-fT-D0b">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="JV3-fT-D0b">
                                                 <rect key="frame" x="254.5" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Purple"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="muQ-xv-7BG">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="muQ-xv-7BG">
                                                 <rect key="frame" x="291" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Black"/>
                                             </imageView>
@@ -407,6 +407,15 @@
                     <connections>
                         <outlet property="backButton" destination="UYO-v8-shg" id="0ag-Lj-72e"/>
                         <outlet property="submitButton" destination="9yD-s4-cY1" id="usO-Xu-GuS"/>
+                        <outletCollection property="colorImageView" destination="sXE-Vu-e5L" collectionClass="NSMutableArray" id="akR-Bo-mrI"/>
+                        <outletCollection property="colorImageView" destination="7fo-sJ-7wl" collectionClass="NSMutableArray" id="Asi-AT-XV3"/>
+                        <outletCollection property="colorImageView" destination="tsF-cT-2bH" collectionClass="NSMutableArray" id="L1t-09-iRg"/>
+                        <outletCollection property="colorImageView" destination="k1S-md-HAf" collectionClass="NSMutableArray" id="yPE-3F-QKF"/>
+                        <outletCollection property="colorImageView" destination="LIg-2b-4iK" collectionClass="NSMutableArray" id="GDa-U0-plC"/>
+                        <outletCollection property="colorImageView" destination="D5S-7H-NAq" collectionClass="NSMutableArray" id="5k8-LJ-pZk"/>
+                        <outletCollection property="colorImageView" destination="eeY-gn-64N" collectionClass="NSMutableArray" id="gVc-Hf-ztu"/>
+                        <outletCollection property="colorImageView" destination="JV3-fT-D0b" collectionClass="NSMutableArray" id="LQ7-6t-znu"/>
+                        <outletCollection property="colorImageView" destination="muQ-xv-7BG" collectionClass="NSMutableArray" id="6z8-0z-RxK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mHh-A9-6kA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -462,28 +471,28 @@
             <color red="0.13725490196078433" green="0.14117647058823529" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DoBit Blue">
-            <color red="0.25882352941176473" green="0.19607843137254902" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.25900000333786011" green="0.19599999487400055" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DoBit Green">
-            <color red="0.18431372549019609" green="0.81960784313725488" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.18400000035762787" green="0.81999999284744263" blue="0.63099998235702515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DoBit Grey">
-            <color red="0.93725490196078431" green="0.93725490196078431" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.93699997663497925" green="0.93699997663497925" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DoBit Pink">
-            <color red="1" green="0.66274509803921566" blue="0.72156862745098038" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.66299998760223389" blue="0.72200000286102295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DoBit Purple">
-            <color red="0.71764705882352942" green="0.43529411764705883" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.71799999475479126" green="0.43500000238418579" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DoBit Red">
-            <color red="1" green="0.396078431372549" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.39599999785423279" blue="0.2630000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DoBit Skyblue">
-            <color red="0.062745098039215685" green="0.56862745098039214" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.063000001013278961" green="0.5690000057220459" blue="0.93699997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DoBit Yellow">
-            <color red="1" green="0.7803921568627451" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.77999997138977051" blue="0.21199999749660492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
