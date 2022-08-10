@@ -176,13 +176,13 @@
                                 <rect key="frame" x="0.0" y="140" width="414" height="51"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="정의" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zjm-vi-vua">
-                                        <rect key="frame" x="20" y="9" width="28" height="19.5"/>
+                                        <rect key="frame" x="20" y="9" width="71" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" red="0.65490196078431373" green="0.65490196078431373" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="아침형 인간" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9sO-U6-KMe">
-                                        <rect key="frame" x="87" y="9" width="307" height="32"/>
+                                        <rect key="frame" x="130" y="9" width="264" height="32"/>
                                         <color key="textColor" name="DoBit Black"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -219,7 +219,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="오전 6시 30분에 미라클 모닝" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vwT-7X-pxT">
-                                        <rect key="frame" x="87" y="9" width="277" height="32"/>
+                                        <rect key="frame" x="130" y="9" width="234" height="32"/>
                                         <color key="textColor" name="DoBit Black"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -265,7 +265,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="잠자기 30분전에 핸드폰 하지 말기" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nU6-Ro-tn9">
-                                        <rect key="frame" x="87" y="9" width="277" height="32"/>
+                                        <rect key="frame" x="130" y="9" width="234" height="32"/>
                                         <color key="textColor" name="DoBit Black"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -310,42 +310,42 @@
                                             <constraint firstAttribute="height" constant="1" id="yqF-M0-6s8"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="L8J-w4-PHF">
-                                        <rect key="frame" x="87" y="9" width="307" height="33"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="L8J-w4-PHF">
+                                        <rect key="frame" x="130" y="9" width="264" height="33"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="sXE-Vu-e5L">
                                                 <rect key="frame" x="0.0" y="0.0" width="16" height="33"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="7fo-sJ-7wl">
-                                                <rect key="frame" x="36.5" y="0.0" width="16" height="33"/>
+                                                <rect key="frame" x="31" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Pink"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="tsF-cT-2bH">
-                                                <rect key="frame" x="73" y="0.0" width="16" height="33"/>
+                                                <rect key="frame" x="62" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Red"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="k1S-md-HAf">
-                                                <rect key="frame" x="109" y="0.0" width="16" height="33"/>
+                                                <rect key="frame" x="93" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Yellow"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="LIg-2b-4iK">
-                                                <rect key="frame" x="145.5" y="0.0" width="16" height="33"/>
+                                                <rect key="frame" x="124" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Green"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="D5S-7H-NAq">
-                                                <rect key="frame" x="182" y="0.0" width="16" height="33"/>
+                                                <rect key="frame" x="155" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Skyblue"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="eeY-gn-64N">
-                                                <rect key="frame" x="218.5" y="0.0" width="16" height="33"/>
+                                                <rect key="frame" x="186" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Blue"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="JV3-fT-D0b">
-                                                <rect key="frame" x="254.5" y="0.0" width="16" height="33"/>
+                                                <rect key="frame" x="217" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Purple"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="capsule.template" translatesAutoresizingMaskIntoConstraints="NO" id="muQ-xv-7BG">
-                                                <rect key="frame" x="291" y="0.0" width="16" height="33"/>
+                                                <rect key="frame" x="248" y="0.0" width="16" height="33"/>
                                                 <color key="tintColor" name="DoBit Black"/>
                                             </imageView>
                                         </subviews>
