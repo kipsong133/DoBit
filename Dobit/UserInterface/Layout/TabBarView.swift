@@ -17,6 +17,7 @@ class TabBarView: UITabBarController {
     
     // MARK: - Helpers
     private func setupAttribute() {
+        tabBar.barTintColor = UIColor(named: "DoBit Grey")
         view.tintColor = UIColor(named: "DoBit Black")
     }
 }
