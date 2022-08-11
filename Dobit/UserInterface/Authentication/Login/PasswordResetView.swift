@@ -41,6 +41,7 @@ class PasswordResetView: UIViewController, BaseViewControllerProtocol, Storyboar
     
     // MARK: - Helpers
     private func setupAttribute() {
+        view.tintColor = dobitTintColor
         view.backgroundColor = dobitBackgroundColor
     }
     
@@ -48,6 +49,11 @@ class PasswordResetView: UIViewController, BaseViewControllerProtocol, Storyboar
         [passwordTextField, passwordCheckTextField].forEach {
             $0?.addBottomBorder()
             $0?.textColor = dobitTintColor
+        }
+        
+        // MARK: iOS 15 버전 이하 UIButton Image 위치 설정
+        if #unavailable(iOS 15.0) {
+            nextButton.semanticContentAttribute = .forceRightToLeft
         }
     }
 }
