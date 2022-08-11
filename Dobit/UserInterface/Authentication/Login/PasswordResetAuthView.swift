@@ -51,7 +51,7 @@ class PasswordResetAuthView: UIViewController, BaseViewControllerProtocol, Story
             $0?.textColor = dobitTintColor
         }
         
-        // MARK: iOS 15 버전 이하 UIButton Image 위치 설정
+        // MARK: iOS 15 이전 버전 UIButton Image 위치 설정
         if #unavailable(iOS 15.0) {
             nextButton.semanticContentAttribute = .forceRightToLeft
         }
