@@ -14,7 +14,7 @@ class AppFirstView: UIViewController, BaseViewControllerProtocol, Storyboardable
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAttribute()
-        setupView()
+        setupLayout()
         
         registerButton.addTarget(self, action: #selector(registerButtonDidTap), for: .touchUpInside)
         loginButton.addTarget(self, action: #selector(loginButtonDidTap), for: .touchUpInside)
@@ -42,7 +42,7 @@ class AppFirstView: UIViewController, BaseViewControllerProtocol, Storyboardable
         self.view.backgroundColor = dobitBackgroundColor
     }
     
-    private func setupView() {
+    private func setupLayout() {
         // MARK: iOS 15 버전 이하 UIButton Image 위치 설정
         if #unavailable(iOS 15.0) {
             [registerButton, loginButton].forEach { button in

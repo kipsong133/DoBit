@@ -41,7 +41,7 @@ class IdentityFormView: UIViewController, BaseViewControllerProtocol, Storyboard
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAttribute()
-        setupView()
+        setupLayout()
     }
     
     // MARK: - Actions
@@ -67,7 +67,7 @@ class IdentityFormView: UIViewController, BaseViewControllerProtocol, Storyboard
         view.backgroundColor = dobitBackgroundColor
     }
     
-    private func setupView() {
+    private func setupLayout() {
         [backButton, submitButton].forEach {
             $0.setTitle("", for: .normal)
         }
@@ -83,16 +83,7 @@ class IdentityFormView: UIViewController, BaseViewControllerProtocol, Storyboard
             imageView.sizeToFit()
         }
         
-        // MARK: UIButton 굵게 처리
-        if #available(iOS 15.0, *) {
-            deleteButton.configuration?.titleTextAttributesTransformer = UIConfigurationTextAttributesTransformer { incoming in
-                var outgoing = incoming
-                outgoing.font = .systemFont(ofSize: 16, weight: .bold)
-                return outgoing
-            }
-        } else {
-            deleteButton.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
-        }
+        deleteButton.bold(ofSize: 16.0, weight: .bold)
     }
     
     // MARK: 색상 선택 시 선택한 색상 강조

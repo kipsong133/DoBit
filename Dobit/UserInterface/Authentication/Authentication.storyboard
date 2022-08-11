@@ -352,6 +352,7 @@
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="Ksh-kH-BwE" id="P6R-E9-jVJ"/>
+                        <outlet property="passwordResetButton" destination="bck-no-XSe" id="6bX-f2-otS"/>
                         <outlet property="passwordTextField" destination="D2e-6l-gzw" id="yJs-gj-O1b"/>
                         <outlet property="previousButton" destination="HDr-ZI-dKo" id="s8d-xf-CFe"/>
                         <outlet property="startButton" destination="bJp-Z9-kL9" id="ii6-33-FxE"/>
@@ -465,10 +466,10 @@
             </objects>
             <point key="canvasLocation" x="1586" y="1495"/>
         </scene>
-        <!--Password Reset View-->
+        <!--Password Reset Auth View-->
         <scene sceneID="WuX-X3-uhj">
             <objects>
-                <viewController storyboardIdentifier="PasswordResetView_Auth" id="AJ6-p9-LMC" customClass="PasswordResetView" customModule="Dobit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PasswordResetView_Auth" id="AJ6-p9-LMC" customClass="PasswordResetAuthView" customModule="Dobit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fic-TJ-f9o">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -577,10 +578,11 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="nextButton" destination="bTT-sd-Wk1" id="0nT-V2-6se"/>
-                        <outlet property="passwordCheckTextField" destination="tBg-cB-gLB" id="Otb-eQ-4oD"/>
-                        <outlet property="passwordTextField" destination="Jar-qw-Jg4" id="Ki7-Ff-k4H"/>
-                        <outlet property="previousButton" destination="Bwr-83-sBK" id="e5a-GP-VfE"/>
+                        <outlet property="certNumberTextField" destination="tBg-cB-gLB" id="19g-bP-ZZh"/>
+                        <outlet property="emailTextField" destination="Jar-qw-Jg4" id="RAY-1G-Y7B"/>
+                        <outlet property="nextButton" destination="bTT-sd-Wk1" id="lhF-dv-Dvs"/>
+                        <outlet property="previousButton" destination="Bwr-83-sBK" id="ETn-dM-ZIr"/>
+                        <outlet property="sendButton" destination="hIK-dm-dxR" id="hMG-Jk-pPS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wj8-io-iAr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

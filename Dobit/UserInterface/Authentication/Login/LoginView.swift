@@ -13,6 +13,7 @@ class LoginView: UIViewController, BaseViewControllerProtocol, Storyboardable {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var passwordResetButton: UIButton!
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
     
@@ -28,7 +29,7 @@ class LoginView: UIViewController, BaseViewControllerProtocol, Storyboardable {
     // MARK: - Actions
     @IBAction func passwordResetButtonDidTap(_ sender: Any) {
         // MARK: 비밀번호 재설정을 위한 인증 화면으로 이동한다.
-        let vc = storyboard?.instantiateViewController(withIdentifier: PasswordResetAuthView.storyboardName) as! PasswordResetView
+        let vc = storyboard?.instantiateViewController(withIdentifier: PasswordResetAuthView.storyboardName) as! PasswordResetAuthView
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -58,6 +59,8 @@ class LoginView: UIViewController, BaseViewControllerProtocol, Storyboardable {
             $0?.addBottomBorder()
             $0?.textColor = dobitTintColor
         }
+        
+        passwordResetButton.bold(ofSize: 14.0, weight: .bold)
         
         // MARK: iOS 15 이전 버전 UIButton Image 위치 설정
         if #unavailable(iOS 15.0) {

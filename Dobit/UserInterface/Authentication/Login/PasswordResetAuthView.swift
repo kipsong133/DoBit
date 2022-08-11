@@ -10,8 +10,10 @@ import UIKit
 class PasswordResetAuthView: UIViewController, BaseViewControllerProtocol, Storyboardable {
     static var storyboardName: String = "PasswordResetView_Auth"
     
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var passwordCheckTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var certNumberTextField: UITextField!
+    
+    @IBOutlet weak var sendButton: UIButton!
     
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
@@ -46,11 +48,12 @@ class PasswordResetAuthView: UIViewController, BaseViewControllerProtocol, Story
     }
     
     private func setupLayout() {
-        [passwordTextField, passwordCheckTextField].forEach {
+        [emailTextField, certNumberTextField].forEach {
             $0?.addBottomBorder()
             $0?.textColor = dobitTintColor
         }
         
+        sendButton.bold(ofSize: 14.0, weight: .bold)
         // MARK: iOS 15 이전 버전 UIButton Image 위치 설정
         if #unavailable(iOS 15.0) {
             nextButton.semanticContentAttribute = .forceRightToLeft

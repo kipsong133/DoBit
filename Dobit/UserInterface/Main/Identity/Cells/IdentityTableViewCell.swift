@@ -13,7 +13,7 @@ class IdentityTableViewCell: UITableViewCell {
     @IBOutlet weak var colorView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        setupView()
+        setupLayout()
         // Initialization code
     }
 
@@ -24,7 +24,7 @@ class IdentityTableViewCell: UITableViewCell {
     }
     
     // MARK: - Helpers
-    func setupView() {
+    func setupLayout() {
         backgroundColor = UIColor(named: "DoBit Grey") ?? .white
         selectionStyle = .none
         
