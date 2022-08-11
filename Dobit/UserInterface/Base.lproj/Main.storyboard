@@ -406,6 +406,8 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="UYO-v8-shg" id="0ag-Lj-72e"/>
+                        <outlet property="defineTextField" destination="9sO-U6-KMe" id="Tu9-Hb-wrm"/>
+                        <outlet property="deleteButton" destination="xS7-6Y-HeC" id="xaq-bj-KDj"/>
                         <outlet property="submitButton" destination="9yD-s4-cY1" id="usO-Xu-GuS"/>
                         <outletCollection property="colorImageView" destination="sXE-Vu-e5L" collectionClass="NSMutableArray" id="akR-Bo-mrI"/>
                         <outletCollection property="colorImageView" destination="7fo-sJ-7wl" collectionClass="NSMutableArray" id="Asi-AT-XV3"/>

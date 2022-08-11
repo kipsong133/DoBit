@@ -12,7 +12,11 @@ class IdentityFormView: UIViewController, BaseViewControllerProtocol, Storyboard
     
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var submitButton: UIButton!
+    
+    @IBOutlet weak var defineTextField: UITextField!
     @IBOutlet var colorImageView: [UIImageView]!
+    
+    @IBOutlet weak var deleteButton: UIButton!
     
     var selected: UIImageView? {
         didSet {
@@ -68,6 +72,8 @@ class IdentityFormView: UIViewController, BaseViewControllerProtocol, Storyboard
             $0.setTitle("", for: .normal)
         }
         
+        defineTextField.delegate = self
+        
         colorImageView.forEach { imageView in
             let tap = UITapGestureRecognizer(target: self, action: #selector(colorImageViewDidTap(_:)))
             imageView.addGestureRecognizer(tap)
@@ -75,6 +81,17 @@ class IdentityFormView: UIViewController, BaseViewControllerProtocol, Storyboard
             
             imageView.image = UIImage(named: "capsule.template")?.imageWithInsets(insets: UIEdgeInsets(top: 3, left: 3, bottom: 3, right: 3), color: colors[imageView.tag])
             imageView.sizeToFit()
+        }
+        
+        // MARK: UIButton 굵게 처리
+        if #available(iOS 15.0, *) {
+            deleteButton.configuration?.titleTextAttributesTransformer = UIConfigurationTextAttributesTransformer { incoming in
+                var outgoing = incoming
+                outgoing.font = .systemFont(ofSize: 16, weight: .bold)
+                return outgoing
+            }
+        } else {
+            deleteButton.titleLabel?.font = .systemFont(ofSize: 16, weight: .bold)
         }
     }
     
@@ -95,5 +112,21 @@ class IdentityFormView: UIViewController, BaseViewControllerProtocol, Storyboard
             
             imageView.layer.borderWidth = 0
         }
+    }
+}
+
+// MARK: - UITextFieldDelegate
+// 사용하는 textField에 delegate 설정 필요
+extension IdentityFormView: UITextFieldDelegate {
+    // 화면 터치 시 키보드 내리기
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    // return 키 눌렀을 경우 키보드 내리기
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        
+        return true
     }
 }
