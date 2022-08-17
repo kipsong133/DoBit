@@ -126,7 +126,7 @@
                                     <constraint firstAttribute="height" constant="30" id="tGv-wq-A8u"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호 확인" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PEQ-s1-KjC">
                                 <rect key="frame" x="20" y="340" width="374" height="30"/>
@@ -134,7 +134,7 @@
                                     <constraint firstAttribute="height" constant="30" id="ubt-Xu-peP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="닉네임" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1yH-cv-uNh">
                                 <rect key="frame" x="20" y="400" width="374" height="30"/>
@@ -186,16 +186,31 @@
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="닉네임을 입력해주세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUh-2Q-mgw">
+                                <rect key="frame" x="20" y="435" width="374" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 입력해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJs-Zf-JV8">
+                                <rect key="frame" x="20" y="315" width="374" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pgl-lZ-ymY"/>
                         <color key="backgroundColor" name="DoBit Grey"/>
                         <constraints>
                             <constraint firstItem="abT-4u-r5C" firstAttribute="leading" secondItem="pgl-lZ-ymY" secondAttribute="leading" id="1H4-Ol-619"/>
                             <constraint firstItem="pgl-lZ-ymY" firstAttribute="trailing" secondItem="YW8-YU-eqX" secondAttribute="trailing" constant="20" id="1ow-am-grc"/>
+                            <constraint firstItem="PUh-2Q-mgw" firstAttribute="top" secondItem="1yH-cv-uNh" secondAttribute="bottom" constant="5" id="2dk-9K-gjG"/>
+                            <constraint firstItem="PUh-2Q-mgw" firstAttribute="trailing" secondItem="1yH-cv-uNh" secondAttribute="trailing" id="3H5-JW-ciR"/>
                             <constraint firstItem="PEQ-s1-KjC" firstAttribute="leading" secondItem="pgl-lZ-ymY" secondAttribute="leading" constant="20" id="6hc-II-1tQ"/>
                             <constraint firstItem="Sfl-Z8-qhe" firstAttribute="top" secondItem="abT-4u-r5C" secondAttribute="bottom" constant="10" id="6jq-AG-rYR"/>
                             <constraint firstItem="YW8-YU-eqX" firstAttribute="leading" secondItem="pgl-lZ-ymY" secondAttribute="leading" constant="20" id="6kn-OT-x1I"/>
                             <constraint firstItem="pgl-lZ-ymY" firstAttribute="trailing" secondItem="KPk-D1-wMP" secondAttribute="trailing" constant="20" id="7Jc-Nf-GCj"/>
+                            <constraint firstItem="PUh-2Q-mgw" firstAttribute="leading" secondItem="1yH-cv-uNh" secondAttribute="leading" id="Dha-U0-mDU"/>
                             <constraint firstItem="oso-9z-h7y" firstAttribute="trailing" secondItem="YW8-YU-eqX" secondAttribute="trailing" id="Dxw-wf-iVu"/>
                             <constraint firstItem="oso-9z-h7y" firstAttribute="leading" secondItem="YW8-YU-eqX" secondAttribute="leading" id="Ef9-2R-6Vh"/>
                             <constraint firstItem="pgl-lZ-ymY" firstAttribute="trailing" secondItem="PEQ-s1-KjC" secondAttribute="trailing" constant="20" id="F1q-E6-wvJ"/>
@@ -203,12 +218,15 @@
                             <constraint firstItem="Lev-MY-ijw" firstAttribute="top" secondItem="pgl-lZ-ymY" secondAttribute="top" constant="60" id="FWF-4Q-4qc"/>
                             <constraint firstItem="V0U-gR-WZS" firstAttribute="top" secondItem="PEQ-s1-KjC" secondAttribute="bottom" constant="5" id="GnT-YW-Ux8"/>
                             <constraint firstItem="pgl-lZ-ymY" firstAttribute="bottom" secondItem="Sfl-Z8-qhe" secondAttribute="bottom" constant="50" id="IOi-1k-a7F"/>
+                            <constraint firstItem="VJs-Zf-JV8" firstAttribute="leading" secondItem="KPk-D1-wMP" secondAttribute="leading" id="Qag-tK-7dk"/>
+                            <constraint firstItem="VJs-Zf-JV8" firstAttribute="top" secondItem="KPk-D1-wMP" secondAttribute="bottom" constant="5" id="SnO-KE-syX"/>
                             <constraint firstItem="dfl-Fo-K6k" firstAttribute="centerX" secondItem="bzp-50-3WN" secondAttribute="centerX" id="VEg-aL-kpT"/>
                             <constraint firstAttribute="bottom" secondItem="dfl-Fo-K6k" secondAttribute="bottom" id="VO7-yH-7nf"/>
                             <constraint firstItem="PEQ-s1-KjC" firstAttribute="top" secondItem="KPk-D1-wMP" secondAttribute="bottom" constant="30" id="WpQ-eK-BOM"/>
                             <constraint firstItem="pgl-lZ-ymY" firstAttribute="trailing" secondItem="1yH-cv-uNh" secondAttribute="trailing" constant="20" id="YqS-LJ-yPF"/>
                             <constraint firstItem="pgl-lZ-ymY" firstAttribute="bottom" secondItem="yjB-qC-tI2" secondAttribute="bottom" constant="50" id="YzE-aa-yEA"/>
                             <constraint firstItem="KPk-D1-wMP" firstAttribute="leading" secondItem="pgl-lZ-ymY" secondAttribute="leading" constant="20" id="Zrr-mM-fyH"/>
+                            <constraint firstItem="VJs-Zf-JV8" firstAttribute="trailing" secondItem="KPk-D1-wMP" secondAttribute="trailing" id="bAZ-wN-97o"/>
                             <constraint firstItem="oso-9z-h7y" firstAttribute="top" secondItem="YW8-YU-eqX" secondAttribute="bottom" constant="5" id="bPK-Qy-PWP"/>
                             <constraint firstItem="pgl-lZ-ymY" firstAttribute="trailing" secondItem="yjB-qC-tI2" secondAttribute="trailing" constant="20" id="czv-y3-Iwz"/>
                             <constraint firstItem="V0U-gR-WZS" firstAttribute="leading" secondItem="PEQ-s1-KjC" secondAttribute="leading" id="dIh-tp-ZqM"/>
@@ -223,9 +241,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailErrorLabel" destination="oso-9z-h7y" id="dM5-az-cd1"/>
                         <outlet property="emailTextField" destination="YW8-YU-eqX" id="hfi-97-hjN"/>
+                        <outlet property="nicknameErrorLabel" destination="PUh-2Q-mgw" id="czb-aL-llt"/>
                         <outlet property="nicknameTextField" destination="1yH-cv-uNh" id="zoG-Da-XIM"/>
+                        <outlet property="passwordCheckErrorLabel" destination="V0U-gR-WZS" id="4c1-Pk-wL1"/>
                         <outlet property="passwordCheckTextField" destination="PEQ-s1-KjC" id="zBg-C6-V9E"/>
+                        <outlet property="passwordErrorLabel" destination="VJs-Zf-JV8" id="D1w-M3-wvK"/>
                         <outlet property="passwordTextField" destination="KPk-D1-wMP" id="VDi-Gf-15c"/>
                         <outlet property="previousButton" destination="Sfl-Z8-qhe" id="bym-KS-KMm"/>
                         <outlet property="startButton" destination="yjB-qC-tI2" id="JpM-B2-srm"/>
@@ -594,7 +616,7 @@
         <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
         <namedColor name="DoBit Black">
-            <color red="0.13725490196078433" green="0.14117647058823529" blue="0.14901960784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.13699999451637268" green="0.14100000262260437" blue="0.14900000393390656" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="DoBit Grey">
             <color red="0.93699997663497925" green="0.93699997663497925" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

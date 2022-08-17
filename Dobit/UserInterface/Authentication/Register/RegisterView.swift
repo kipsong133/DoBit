@@ -15,6 +15,11 @@ class RegisterView: UIViewController, BaseViewControllerProtocol, Storyboardable
     @IBOutlet weak var passwordCheckTextField: UITextField!
     @IBOutlet weak var nicknameTextField: UITextField!
     
+    @IBOutlet weak var emailErrorLabel: UILabel!
+    @IBOutlet weak var passwordErrorLabel: UILabel!
+    @IBOutlet weak var passwordCheckErrorLabel: UILabel!
+    @IBOutlet weak var nicknameErrorLabel: UILabel!
+    
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
     
@@ -38,12 +43,36 @@ class RegisterView: UIViewController, BaseViewControllerProtocol, Storyboardable
     private func startButtonDidTap() {
         let email = emailTextField.text ?? ""
         let pw = passwordTextField.text ?? ""
-        let pwCheck = passwordCheckTextField.text ?? ""
+        let pwConfirm = passwordCheckTextField.text ?? ""
         let nickname = nicknameTextField.text ?? ""
         
-        // MARK: 로그인 화면으로 이동한다.
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: LoginView.storyboardName) as! LoginView
-        navigationController?.pushViewController(vc, animated: true)
+        AuthenticationService.register(email: email, pw: pw, pwConfirm: pwConfirm, nickname: nickname) { [weak self] data in
+            guard let self = self else { return }
+            
+            if data.isSuccess {
+                // MARK: 로그인 화면으로 이동한다.
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: LoginView.storyboardName) as! LoginView
+                self.navigationController?.pushViewController(vc, animated: true)
+            } else {
+                // MARK: 회원가입 실패 시 에러 메시지 표시
+                [self.emailErrorLabel, self.passwordErrorLabel, self.passwordCheckErrorLabel, self.nicknameErrorLabel].forEach {
+                    $0?.isHidden = true
+                }
+                
+                switch data.code {
+                case 2020, 2021, 2036:
+                    self.emailErrorLabel.error(text: data.message)
+                case 2030, 2035:
+                    self.passwordErrorLabel.error(text: data.message)
+                case 2031, 2033:
+                    self.passwordCheckErrorLabel.error(text: data.message)
+                case 2034, 3011:
+                    self.nicknameErrorLabel.error(text: data.message)
+                default:
+                    break
+                }
+            }
+        }
     }
     
     // MARK: - Helpers
