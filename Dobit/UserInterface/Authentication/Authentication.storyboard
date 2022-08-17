@@ -285,7 +285,7 @@
                                     <constraint firstAttribute="height" constant="30" id="7Ca-wd-arB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDr-ZI-dKo">
                                 <rect key="frame" x="20" y="778" width="74" height="34"/>
@@ -373,7 +373,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailErrorLabel" destination="RzQ-nl-f13" id="0Gc-to-R10"/>
                         <outlet property="emailTextField" destination="Ksh-kH-BwE" id="P6R-E9-jVJ"/>
+                        <outlet property="passwordErrorLabel" destination="1bF-cU-fQh" id="fOD-Wb-xl8"/>
                         <outlet property="passwordResetButton" destination="bck-no-XSe" id="6bX-f2-otS"/>
                         <outlet property="passwordTextField" destination="D2e-6l-gzw" id="yJs-gj-O1b"/>
                         <outlet property="previousButton" destination="HDr-ZI-dKo" id="s8d-xf-CFe"/>

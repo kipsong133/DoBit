@@ -13,6 +13,9 @@ class LoginView: UIViewController, BaseViewControllerProtocol, Storyboardable {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
+    @IBOutlet weak var emailErrorLabel: UILabel!
+    @IBOutlet weak var passwordErrorLabel: UILabel!
+    
     @IBOutlet weak var passwordResetButton: UIButton!
     @IBOutlet weak var previousButton: UIButton!
     @IBOutlet weak var startButton: UIButton!
@@ -41,11 +44,34 @@ class LoginView: UIViewController, BaseViewControllerProtocol, Storyboardable {
     
     @objc
     private func startButtonDidTap() {
-        // MARK: 메인 화면으로 이동한다.
-        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-        let vc =  storyboard.instantiateViewController(withIdentifier: TabBarView.identifier) as! TabBarView
-        let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
-        sceneDelegate.window?.rootViewController = vc
+        let email = emailTextField.text ?? ""
+        let pw = passwordTextField.text ?? ""
+        
+        AuthenticationService.login(email: email, pw: pw) { [weak self] data in
+            guard let self = self else { return }
+            
+            if data.isSuccess {
+                // MARK: 메인 화면으로 이동한다.
+                let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+                let vc =  storyboard.instantiateViewController(withIdentifier: TabBarView.identifier) as! TabBarView
+                let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
+                sceneDelegate.window?.rootViewController = vc
+            } else {
+                // MARK: 로그인 실패 시 에러 메시지 표시
+                [self.emailErrorLabel, self.passwordErrorLabel].forEach {
+                    $0?.isHidden = true
+                }
+                
+                switch data.code {
+                case 2020, 2021, 2073:
+                    self.emailErrorLabel.error(text: data.message)
+                case 2030, 2032, 2074, 3010:
+                    self.passwordErrorLabel.error(text: data.message)
+                default:
+                    break
+                }
+            }
+        }
     }
     
     // MARK: - Helpers
