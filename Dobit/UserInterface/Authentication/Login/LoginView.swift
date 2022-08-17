@@ -48,20 +48,22 @@ class LoginView: UIViewController, BaseViewControllerProtocol, Storyboardable {
         let pw = passwordTextField.text ?? ""
         
         AuthenticationService.login(email: email, pw: pw) { [weak self] data in
-            guard let self = self, let result = data.result else { return }
+            guard let self = self else { return }
             
             if data.isSuccess {
                 // MARK: 앱에 로그인 정보 저장
-                let userdefaults = UserDefaults.standard
-                userdefaults.set(result.userIdx, forKey: "userIdx")
-                userdefaults.set(result.nickname, forKey: "nickname")
-                userdefaults.set(result.jwt, forKey: "jwt")
-                
-                // MARK: 메인 화면으로 이동한다.
-                let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
-                let vc =  storyboard.instantiateViewController(withIdentifier: TabBarView.identifier) as! TabBarView
-                let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
-                sceneDelegate.window?.rootViewController = vc
+                if let result = data.result {
+                    let userdefaults = UserDefaults.standard
+                    userdefaults.set(result.userIdx, forKey: "userIdx")
+                    userdefaults.set(result.nickname, forKey: "nickname")
+                    userdefaults.set(result.jwt, forKey: "jwt")
+                    
+                    // MARK: 메인 화면으로 이동한다.
+                    let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+                    let vc =  storyboard.instantiateViewController(withIdentifier: TabBarView.identifier) as! TabBarView
+                    let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
+                    sceneDelegate.window?.rootViewController = vc
+                }
             } else {
                 // MARK: 로그인 실패 시 에러 메시지 표시
                 [self.emailErrorLabel, self.passwordErrorLabel].forEach {

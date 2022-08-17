@@ -602,7 +602,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="certNumberErrorLabel" destination="MQU-az-pMU" id="Dq8-jp-XNq"/>
                         <outlet property="certNumberTextField" destination="tBg-cB-gLB" id="19g-bP-ZZh"/>
+                        <outlet property="emailErrorLabel" destination="BWS-xS-aZd" id="fm7-iN-isx"/>
                         <outlet property="emailTextField" destination="Jar-qw-Jg4" id="RAY-1G-Y7B"/>
                         <outlet property="nextButton" destination="bTT-sd-Wk1" id="lhF-dv-Dvs"/>
                         <outlet property="previousButton" destination="Bwr-83-sBK" id="ETn-dM-ZIr"/>
