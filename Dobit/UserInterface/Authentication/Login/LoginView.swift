@@ -48,9 +48,15 @@ class LoginView: UIViewController, BaseViewControllerProtocol, Storyboardable {
         let pw = passwordTextField.text ?? ""
         
         AuthenticationService.login(email: email, pw: pw) { [weak self] data in
-            guard let self = self else { return }
+            guard let self = self, let result = data.result else { return }
             
             if data.isSuccess {
+                // MARK: 앱에 로그인 정보 저장
+                let userdefaults = UserDefaults.standard
+                userdefaults.set(result.userIdx, forKey: "userIdx")
+                userdefaults.set(result.nickname, forKey: "nickname")
+                userdefaults.set(result.jwt, forKey: "jwt")
+                
                 // MARK: 메인 화면으로 이동한다.
                 let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
                 let vc =  storyboard.instantiateViewController(withIdentifier: TabBarView.identifier) as! TabBarView
