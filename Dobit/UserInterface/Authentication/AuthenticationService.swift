@@ -83,7 +83,7 @@ class AuthenticationService {
             "confirmPassword": pwConfirm
         ]
         
-        AF.request(url, method: .post, parameters: params, encoding: JSONEncoding.default)
+        AF.request(url, method: .patch, parameters: params, encoding: JSONEncoding.default)
             .responseDecodable(of: PasswordResetResultData.self) { response in
                 switch response.result {
                 case .success:

@@ -406,7 +406,7 @@
                                     <constraint firstAttribute="height" constant="30" id="weU-Ib-Ufw"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="비밀번호 확인" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kJC-dJ-Qfc">
                                 <rect key="frame" x="20" y="280" width="374" height="30"/>
@@ -414,7 +414,7 @@
                                     <constraint firstAttribute="height" constant="30" id="4gp-H0-Uce"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0z-RB-3qe">
                                 <rect key="frame" x="20" y="778" width="74" height="34"/>
@@ -452,6 +452,12 @@
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호를 입력해주세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0N-Ps-MBA">
+                                <rect key="frame" x="20" y="255" width="374" height="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GOv-vQ-4Yz"/>
                         <color key="backgroundColor" name="DoBit Grey"/>
@@ -459,10 +465,12 @@
                             <constraint firstItem="W0z-RB-3qe" firstAttribute="top" secondItem="a0c-8H-P9v" secondAttribute="bottom" constant="10" id="1Db-EN-e7C"/>
                             <constraint firstItem="Bve-Su-bvP" firstAttribute="top" secondItem="GOv-vQ-4Yz" secondAttribute="top" constant="60" id="Cyn-it-aWl"/>
                             <constraint firstItem="GOv-vQ-4Yz" firstAttribute="trailing" secondItem="a0c-8H-P9v" secondAttribute="trailing" id="EMH-ZM-Nre"/>
+                            <constraint firstItem="C0N-Ps-MBA" firstAttribute="top" secondItem="pzl-Pc-mde" secondAttribute="bottom" constant="5" id="FYR-IK-Psh"/>
                             <constraint firstItem="fsn-3H-J7v" firstAttribute="trailing" secondItem="kJC-dJ-Qfc" secondAttribute="trailing" id="IWO-L8-FYW"/>
                             <constraint firstItem="fsn-3H-J7v" firstAttribute="top" secondItem="kJC-dJ-Qfc" secondAttribute="bottom" constant="5" id="KCU-wi-Iv8"/>
                             <constraint firstAttribute="bottom" secondItem="ex6-ZM-4RD" secondAttribute="bottom" id="KES-1x-Hcy"/>
                             <constraint firstItem="GOv-vQ-4Yz" firstAttribute="bottom" secondItem="W0z-RB-3qe" secondAttribute="bottom" constant="50" id="L9q-Vq-vep"/>
+                            <constraint firstItem="C0N-Ps-MBA" firstAttribute="leading" secondItem="pzl-Pc-mde" secondAttribute="leading" id="Ny8-ux-h8v"/>
                             <constraint firstItem="ex6-ZM-4RD" firstAttribute="centerX" secondItem="JcR-C3-PbA" secondAttribute="centerX" id="Q57-Fz-1ug"/>
                             <constraint firstItem="Bve-Su-bvP" firstAttribute="leading" secondItem="GOv-vQ-4Yz" secondAttribute="leading" constant="20" id="Qe4-6P-jl3"/>
                             <constraint firstItem="GOv-vQ-4Yz" firstAttribute="trailing" secondItem="pzl-Pc-mde" secondAttribute="trailing" constant="20" id="SDc-1U-XEP"/>
@@ -471,6 +479,7 @@
                             <constraint firstItem="GOv-vQ-4Yz" firstAttribute="bottom" secondItem="nBh-iU-XTr" secondAttribute="bottom" constant="50" id="Zpx-p5-dnO"/>
                             <constraint firstItem="GOv-vQ-4Yz" firstAttribute="trailing" secondItem="nBh-iU-XTr" secondAttribute="trailing" constant="20" id="avo-vE-oGx"/>
                             <constraint firstItem="ex6-ZM-4RD" firstAttribute="top" secondItem="a0c-8H-P9v" secondAttribute="bottom" id="awJ-kF-PbO"/>
+                            <constraint firstItem="C0N-Ps-MBA" firstAttribute="trailing" secondItem="pzl-Pc-mde" secondAttribute="trailing" id="cjc-RN-WJE"/>
                             <constraint firstItem="fsn-3H-J7v" firstAttribute="leading" secondItem="kJC-dJ-Qfc" secondAttribute="leading" id="fMu-Z3-3Ec"/>
                             <constraint firstItem="a0c-8H-P9v" firstAttribute="leading" secondItem="GOv-vQ-4Yz" secondAttribute="leading" id="hkm-KD-Ckv"/>
                             <constraint firstItem="pzl-Pc-mde" firstAttribute="leading" secondItem="GOv-vQ-4Yz" secondAttribute="leading" constant="20" id="iVm-2z-9fU"/>
@@ -481,7 +490,9 @@
                     </view>
                     <connections>
                         <outlet property="nextButton" destination="nBh-iU-XTr" id="9ZD-eO-Vxf"/>
+                        <outlet property="passwordCheckErrorLabel" destination="fsn-3H-J7v" id="B17-o1-PHQ"/>
                         <outlet property="passwordCheckTextField" destination="kJC-dJ-Qfc" id="gmd-yN-ArI"/>
+                        <outlet property="passwordErrorLabel" destination="C0N-Ps-MBA" id="40e-cj-uEw"/>
                         <outlet property="passwordTextField" destination="pzl-Pc-mde" id="ALf-BG-jvj"/>
                         <outlet property="previousButton" destination="W0z-RB-3qe" id="SUw-Jo-C9z"/>
                     </connections>

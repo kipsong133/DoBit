@@ -46,7 +46,7 @@ class PasswordResetAuthView: UIViewController, BaseViewControllerProtocol, Story
                     // TODO: 인증번호 재설정 성공 시 alert 띄우기
                 }
             } else {
-                // MARK: 회원가입 실패 시 에러 메시지 표시
+                // MARK: 비밀번호 재설정 인증 실패 시 에러 메시지 표시
                 self.emailErrorLabel.isHidden = true
                 
                 switch data.code {
